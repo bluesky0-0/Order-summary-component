@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    
+   
+    
+    background-color:  hsl(225, 100%, 94%);
+    position: relative;
+    
+    
+}
+.bg{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    
+}
+
+.container
+{
+   /* display: flex;
+   flex-wrap: wrap; */
+    position: absolute;
+    left: 50%;
+    top:  50%;
+    width: 452px;
+    /* height: 600px; */
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card
+{
+    text-align: center;
+    padding: 7%;
+    
+}
+.text h2
+{
+   padding: 3% 3% 2% 3%;
+   font-size: 2em;
+   font-weight: bold;
+}
+.text p
+{
+    color:  hsl(224, 23%, 55%);
+    padding: 4%;
+    font-size: 1.2em;
+    
+}
+.box
+{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+   display: flex;
+    align-items: center;
+    justify-content: space-between;    /* gives spaces*/
+    padding:25px;
+   
+    overflow: hidden;
+   
+}
+.boxleft{
+    display: flex;
+    align-items: center;
+    
+}
+.write
+{
+    margin: 0px 0px 0px 20px;
+    font-weight: 500;
+}
+.write h4
+{
+ font-weight: 900;    
+}
+
+.boxleft div p{
+   color:hsl(224, 23%, 55%);
+   font-weight: bold;
+}
+
+.boxright a
+{
+   /* text-decoration: none; */
+   color: hsl(245, 75%, 52%);
+}
+
+.boxright a:hover
+
+{
+    text-decoration: none;
+    cursor: grab;
+}
+
+.payment
+{
+   padding: 5%;
+   display: block;
+   background-color: hsl(245, 75%, 52%);
+   border-radius: 15px;
+   margin-top: 8%;
+   cursor: default;
+   transition:background-color .2s ease;
+   box-shadow: 5px 5px  5px  hsl(224, 15%, 56%);
+   
+}
+
+.payment a
+{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.payment:hover
+{
+    cursor: grab;
+    background-color: hsl(245, 53%, 58%);
+}
+.order a
+{
+    text-decoration: none;
+    margin-top: 8%;
+ 
+    display: block;
+    color:  hsl(224, 23%, 55%);
+}
+.order a:hover
+{
+    cursor: grab;
+}
+
+
+
+/*  HOW TO CENTER A DIV 
+
+body == position:relative
+box ==  position:absolute
+box ==  top=50%
+box ==  left=50%
+box == transform: translate(-50%,-50%);
+
+check BODY & CONTAINER tag in this code
+*/
